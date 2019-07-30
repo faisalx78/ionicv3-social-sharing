@@ -30,6 +30,21 @@ export class HomePage {
   file: string = '';
   subject: string = '';
   link: string = 'http://google.com';
+  
+  
+  
+  ....
+  
+  
+  
+    share(){
+    this.socialSharing.share(this.message, this.subject, this.file, this.link)
+    .then(()=>{
+
+    }).catch(()=>{
+
+    });
+  }
 ```
 #### home.html
 ```
